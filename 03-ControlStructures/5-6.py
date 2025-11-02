@@ -1,14 +1,15 @@
 ###
 # Calculates the sum of even numbers from 1 to a given number N
+# (using a while loop)
 #
-N = 10
+N = int(input('enter ending number: '))
 sum_even = 0
-# Calculate the sum of even numbers
+i = 1 
 
-while i in range(1, N + 1):
+# Calculate the sum of even numbers
+while i <= N:
     if i % 2 == 0:
         sum_even += i
-    else:
-        break
+    i += 1  # move to the next number
 
 print(f"The sum of even numbers from 1 to {N} is: {sum_even}")
