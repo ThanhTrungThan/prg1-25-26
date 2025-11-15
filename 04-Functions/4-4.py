@@ -1,13 +1,12 @@
-def digits_sum(number):
-    number = abs(number)
-    number_str = str(number)
-    sum_digits = 0
+def s(x):
+    x = abs(x)
+    strx = str(x)
+    d = 0
 
-    for digits_char in number_str:
-        sum_digits += int(digits_char)
-    return sum_digits
+    for i in strx:
+        d += int(i)
+    return d
 
-
-any_number = int(input('enter any number: '))
-result = digits_sum(any_number)
-print(result)
+any = int(input("enter any number: "))
+res = s(any)
+print(res)
